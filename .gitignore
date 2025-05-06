@@ -22,3 +22,4 @@ components
 *.njsproj
 *.sln
 *.sw?
+coverage
