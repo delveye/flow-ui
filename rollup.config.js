@@ -7,7 +7,7 @@ import clear from "rollup-plugin-clear";
 import glob from "glob";
 
 const files = glob.sync(["components/**/*.{js,jsx}"], {
-  ignore: ["components/**/*.stories.js"],
+  ignore: ["components/**/*.test.js", "components/**/*.stories.js"],
 });
 
 const TARGET_DIR = "dist";
