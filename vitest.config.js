@@ -11,7 +11,14 @@ export default defineConfig({
     include: ["src/**/*.test.{ts,tsx}"],
     coverage: {
       reporter: ["text", "json", "html"],
-      exclude: ["node_modules/", "src/**/*.stories.{ts,tsx}"],
+      exclude: [
+        "node_modules/",
+        "dist/",
+        "packages/",
+        "src/**/*.stories.{ts,tsx}",
+        "src/**/*/index.ts",
+        "src/index.ts",
+      ],
     },
   },
   resolve: {
