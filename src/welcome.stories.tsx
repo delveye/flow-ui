@@ -11,6 +11,7 @@ const markdownIt = new MarkdownIt("commonmark", {
 
 export default {
   title: "Flow UI",
+  enableShortcuts: false,
 };
 
 export const gettingStarted = () => {
