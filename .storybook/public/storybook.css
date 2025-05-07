@@ -1,0 +1,32 @@
+#storybook-docs .sbdocs-wrapper {
+  background: transparent !important;
+}
+
+.sb-show-main.sb-main-fullscreen,
+.sb-main-fullscreen {
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+#storybook-docs details {
+  position: relative;
+  z-index: 99;
+}
+
+#storybook-docs .docs-story > div {
+  padding: 0;
+  background: none;
+}
+
+.custom-fullscreen #switches-container {
+  display: none;
+}
+
+.custom-fullscreen .sbdocs-wrapper {
+  padding: 20px;
+}
+
+.custom-fullscreen .sbdocs-content {
+  max-width: unset;
+}

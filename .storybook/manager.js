@@ -13,4 +13,10 @@ addons.setConfig({
   theme: flowUITheme,
   showPanel: false,
   showToolbar: false,
+  previewTabs: {
+    canvas: {hidden: true},
+  },
+  sidebar: {
+    showRoots: true,
+  },
 });

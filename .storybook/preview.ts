@@ -1,4 +1,5 @@
 import type {Preview} from "@storybook/react";
+import "./public/storybook.css";
 
 const preview: Preview = {
   parameters: {
@@ -6,6 +7,7 @@ const preview: Preview = {
       disable: true,
       expanded: true,
     },
+    viewMode: "docs",
   },
 };
 
