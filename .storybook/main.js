@@ -4,16 +4,7 @@ const flowConfig = require("../webpack.config").createConfig();
 
 module.exports = {
   stories: ["../src/welcome.stories.tsx", "../src/**/*.stories.{js,ts,tsx}"],
-  addons: [
-    {
-      name: "@storybook/addon-essentials",
-      options: {
-        actions: false,
-        docs: true,
-      },
-    },
-    '@storybook/addon-themes',
-  ].filter(Boolean),
+  addons: ["@storybook/addon-essentials", "@storybook/addon-themes"],
   webpackFinal(config) {
     flowConfig.componentsPath.push(
       __dirname,
