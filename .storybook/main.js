@@ -12,4 +12,16 @@ export default {
     autodocs: true,
   },
   staticDirs: ["./public", "./"],
+  viteFinal: async config => {
+    config.plugins = config.plugins || [];
+    config.plugins.push({
+      name: "markdown-loader",
+      transform(code, id) {
+        if (id.slice(-3) === ".md") {
+          return `export default ${JSON.stringify(code)};`;
+        }
+      },
+    });
+    return config;
+  },
 };

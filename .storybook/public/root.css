@@ -7,18 +7,6 @@
 }
 
 @media (min-width: 600px) {
-  #root > div:before {
-    content: "";
-    position: absolute;
-    top: -200px;
-    left: -200px;
-    width: 400px;
-    height: 400px;
-    background: #b27bcd;
-    opacity: 0.5;
-    filter: blur(150px);
-  }
-
   #root > div:after {
     content: "";
     position: absolute;
@@ -29,6 +17,7 @@
     background: #9fbfe9;
     opacity: 0.5;
     filter: blur(150px);
+    pointer-events: none;
   }
 }
 

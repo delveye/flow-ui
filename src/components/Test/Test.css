@@ -1,3 +1,7 @@
+@import "../../styles/variables.css";
+
 .test {
   font-size: large;
+  color: var(--color-brand-foreground-link);
+  font-family: var(--font-family-sans);
 }
