@@ -12,6 +12,7 @@ module.exports = {
         docs: true,
       },
     },
+    '@storybook/addon-themes',
   ].filter(Boolean),
   webpackFinal(config) {
     flowConfig.componentsPath.push(
@@ -36,6 +37,9 @@ module.exports = {
     ];
 
     return config;
+  },
+  core: {
+    disableTelemetry: true,
   },
   framework: {
     name: "@storybook/react-webpack5",
